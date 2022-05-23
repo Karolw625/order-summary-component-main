@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+/* primary colors */
+/* neutral colors */
+html,
+body {
+  margin: 0;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #7280a7;
+  background-image: url("images/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #e0e8ff;
+}
+@media all and (min-width: 1440px) {
+  body {
+    background-image: url("images/pattern-background-desktop.svg");
+  }
+}
+
+h2 {
+  font-size: 26px;
+}
+
+p {
+  font-size: 16px;
+}
+
+a {
+  color: #3829e0;
+  font-weight: 700;
+}
+a:hover {
+  color: #7280a7;
+  text-decoration: none;
+}
+
+/* styling button */
+.btn {
+  display: block;
+  width: 100%;
+  height: 50px;
+  border-radius: 12px;
+  border: none;
+  color: #7280a7;
+  font-weight: 900;
+  font-size: 15px;
+  cursor: pointer;
+}
+.btn--payment {
+  color: white;
+  background-color: #3829e0;
+}
+.btn--payment:hover {
+  opacity: 0.5;
+}
+.btn--cancel {
+  background-color: white;
+}
+.btn--cancel:hover {
+  color: #1f2f56;
+}
+
+/*styling layout*/
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  width: 327px;
+  margin: 0 1em;
+}
+.card__image {
+  display: block;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+.card__info {
+  padding: 24px;
+  background-color: white;
+  text-align: center;
+  border-radius: 0 0 20px 20px;
+}
+.card__info__title {
+  color: #1f2f56;
+  font-weight: 900;
+}
+.card__info__description {
+  padding: 0 15px;
+}
+.card__info__order-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 25px 0;
+  padding: 15px;
+  text-align: left;
+  background-color: #f5f7ff;
+  border-radius: 10px;
+}
+.card__info__order-summary__desc {
+  padding-left: 20px;
+}
+.card__info__order-summary__desc__title {
+  color: #1f2f56;
+  font-weight: 700;
+}
+@media all and (min-width: 1400px) {
+  .card__info {
+    padding: 24px 60px;
+  }
+}
+@media all and (min-width: 1400px) {
+  .card {
+    width: 450px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
